@@ -1,0 +1,26 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/HAMMER17/js-oop-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/HAMMER17/js-oop-project-lvl1/actions)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HAMMER17/js-oop-project-lvl1.git"
+  },
+  "author": "plutalov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HAMMER17/js-oop-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/HAMMER17/js-oop-project-lvl1#readme",
+  "dependencies": {
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
