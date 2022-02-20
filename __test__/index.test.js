@@ -1,4 +1,4 @@
-import Validator from '../index.js';
+import Validator from '..';
 
 describe('Validator', () => {
     it('string', () => {

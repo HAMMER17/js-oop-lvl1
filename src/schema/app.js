@@ -1,6 +1,6 @@
-import string from './String.js';
-import object from './Object.js';
-import array from './Array.js';;
-import number from './Numder.js';
+import StringSchema from './String.js';
+import ObjectSchema from './Object.js';
+import ArraySchema from './Array.js';;
+import NumberSchema from './Numder.js';
 
-export default { string, object, array, number };
+export default { StringSchema, ObjectSchema, ArraySchema, NumberSchema };
