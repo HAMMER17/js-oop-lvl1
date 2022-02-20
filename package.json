@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+    "test": "npx jest --bail"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,15 @@
   },
   "homepage": "https://github.com/HAMMER17/js-oop-project-lvl1#readme",
   "dependencies": {
+    "lodash": "^4.17.21",
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "jest": "^27.5.1"
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.1",
+    "jest": "^27.5.1",
+    "prettier": "^2.5.1"
   }
 }

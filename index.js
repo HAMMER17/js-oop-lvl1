@@ -1,4 +1,3 @@
-const sum = (a, b) => {
-    return a * b
-}
-export default sum;
+import Validator from './src/index.js';
+
+export default Validator;
