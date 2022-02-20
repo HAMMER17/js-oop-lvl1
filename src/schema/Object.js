@@ -1,28 +1,28 @@
-import _ from 'lodash';
+import _ from "lodash";
 
-import BaseSchema from './schema.js';
+import BaseSchema from "./schema.js";
 
 export default class ObjectSchema extends BaseSchema {
-    constructor(customValidators) {
-        super({ ...ObjectSchema.validators, customValidators });
-    }
+  constructor(customValidators) {
+    super({ ...ObjectSchema.validators, customValidators });
+  }
 
-    shape(schemas) {
-        const validate = (data) => {
-            const result = Object.entries(schemas).every(([key, schema]) => {
-                const value = data[key];
-                return schema.isValid(value);
-            });
+  shape(schemas) {
+    const validate = (data) => {
+      const result = Object.entries(schemas).every(([key, schema]) => {
+        const value = data[key];
+        return schema.isValid(value);
+      });
 
-            return result;
-        };
+      return result;
+    };
 
-        this.addCheck('withShape', validate);
-        return this;
-    }
+    this.addCheck("withShape", validate);
+    return this;
+  }
 }
 
 ObjectSchema.validators = {
-    required: _.isObject,
-    withShape: (value, validate) => validate(value),
+  required: _.isObject,
+  withShape: (value, validate) => validate(value),
 };

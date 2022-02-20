@@ -1,14 +1,14 @@
 // @ts-check
 
-import BaseSchema from './schema.js';
+import BaseSchema from "./schema.js";
 
 export default class ArraySchema extends BaseSchema {
-    constructor(customValidators) {
-        super({ ...ArraySchema.validators, ...customValidators });
-    }
+  constructor(customValidators) {
+    super({ ...ArraySchema.validators, ...customValidators });
+  }
 }
 
 ArraySchema.validators = {
-    required: Array.isArray,
-    sizeof: (array, size) => array.length === size,
+  required: Array.isArray,
+  sizeof: (array, size) => array.length === size,
 };
