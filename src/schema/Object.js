@@ -1,6 +1,6 @@
-import _ from "lodash";
+import _ from 'lodash';
 
-import BaseSchema from "./schema.js";
+import BaseSchema from './schema.js';
 
 export default class ObjectSchema extends BaseSchema {
   constructor(customValidators) {
@@ -17,7 +17,7 @@ export default class ObjectSchema extends BaseSchema {
       return result;
     };
 
-    this.addCheck("withShape", validate);
+    this.addCheck('withShape', validate);
     return this;
   }
 }

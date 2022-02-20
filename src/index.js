@@ -1,8 +1,8 @@
 // @ts-check
 
-import _ from "lodash";
+import _ from 'lodash';
 
-import schemas from "./schema/app.js";
+import schemas from './schema/app.js';
 
 export default class Validator {
   constructor() {

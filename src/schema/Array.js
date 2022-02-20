@@ -1,6 +1,6 @@
 // @ts-check
 
-import BaseSchema from "./schema.js";
+import BaseSchema from './schema.js';
 
 export default class ArraySchema extends BaseSchema {
   constructor(customValidators) {

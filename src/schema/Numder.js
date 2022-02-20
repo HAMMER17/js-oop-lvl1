@@ -1,8 +1,8 @@
 // @ts-check
 
-import _ from "lodash";
+import _ from 'lodash';
 
-import BaseSchema from "./schema.js";
+import BaseSchema from './schema.js';
 
 export default class NumberSchema extends BaseSchema {
   constructor(customValidators) {
